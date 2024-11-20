@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://dashboardchatapp-backend.vercel.app';
+const API_URL = 'http://localhost:5000';
 
 const AuthService = {
   login: async (credentials) => {

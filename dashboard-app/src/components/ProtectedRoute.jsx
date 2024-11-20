@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import AuthService from '../services/AuthService';
+import AuthService from '../services/AuthService'; // Ensure the path to AuthService is correct
 
 const ProtectedRoute = ({ children }) => {
   return AuthService.isAuthenticated() ? children : <Navigate to="/login" />;

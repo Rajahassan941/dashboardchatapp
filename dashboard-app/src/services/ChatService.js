@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const socket = io('https://dashboardchatapp-backend.vercel.app');
+const socket = io('http://localhost:5000');
 
 const ChatService = {
   sendMessage: (message) => {
